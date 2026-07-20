@@ -89,7 +89,7 @@ A escolha do modelo ideal deve ser guiada pelos objetivos operacionais e finance
 
 * **Estratégia Eficiente (Recomendado: Árvore de Decisão)**
   * **Foco:** Otimização de orçamento e campanhas direcionadas.
-  * **Justificativa:** Com **90,67% de Acurácia** e **69,59% de Precisão**, este modelo reduz drasticamente os Falsos Positivos (apenas 66 casos). É a escolha ideal caso a empresa tenha um orçamento limitado para cupons ou descontos e precise garantir que apenas clientes em risco real sejam impactados.
+  * **Justificativa:** Com **90,76% de Acurácia** e **69,37% de Precisão**, este modelo reduz drasticamente os Falsos Positivos (apenas 66 casos). É a escolha ideal caso a empresa tenha um orçamento limitado para cupons ou descontos e precise garantir que apenas clientes em risco real sejam impactados.
 
 **Recomendação de Implementação:** Utilizar o **KNN** como modelo principal no pipeline de produção para alertas preventivos, aplicando a **Árvore de Decisão** em campanhas específicas onde o custo por ação de marketing for elevado.
 
