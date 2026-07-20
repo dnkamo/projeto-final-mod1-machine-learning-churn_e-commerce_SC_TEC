@@ -79,6 +79,22 @@ O pipeline do projeto foi estruturado de ponta a ponta seguindo as boas prática
 
 ---
 
+## Veredito do Negócio & Recomendação Estratégica
+
+A escolha do modelo ideal deve ser guiada pelos objetivos operacionais e financeiros da empresa:
+
+* **Estratégia Defensiva (Recomendado: KNN)**
+  * **Foco:** Maximizar a retenção e evitar a perda de receita.
+  * **Justificativa:** Com um **Recall de 91,58%**, o KNN falha em detectar apenas 16 clientes propensos ao *churn*. É a melhor opção quando o custo de perder um cliente (CAC para repor) é superior ao custo de enviar uma oferta de retenção.
+
+* **Estratégia Eficiente (Recomendado: Árvore de Decisão)**
+  * **Foco:** Otimização de orçamento e campanhas direcionadas.
+  * **Justificativa:** Com **90,67% de Acurácia** e **69,59% de Precisão**, este modelo reduz drasticamente os Falsos Positivos (apenas 66 casos). É a escolha ideal caso a empresa tenha um orçamento limitado para cupons ou descontos e precise garantir que apenas clientes em risco real sejam impactados.
+
+**Recomendação de Implementação:** Utilizar o **KNN** como modelo principal no pipeline de produção para alertas preventivos, aplicando a **Árvore de Decisão** em campanhas específicas onde o custo por ação de marketing for elevado.
+
+---
+
 ## Como Executar o Projeto
 
 Siga o passo a passo abaixo para configurar o seu ambiente e rodar o arquivo `.ipynb` localmente.
